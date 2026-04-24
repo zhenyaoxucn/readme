@@ -8,18 +8,19 @@
     :root{
       --paper:#fffaf2;--ink:#24211d;--muted:#776f64;--line:#e7dccb;--soft:#fbf4e8;--accent:#f28a3c;--accent-soft:#fff0df;--green:#2f6b4b;
     }
-    *{box-sizing:border-box} body{margin:0;min-height:100vh;background:#efe8dc;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.45;padding:28px}
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;background:#efe8dc;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.45;padding:28px}
     .a4{width:210mm;min-height:297mm;margin:0 auto;background:var(--paper);border:1px solid rgba(80,60,36,.12);border-radius:28px;box-shadow:0 24px 80px rgba(66,45,20,.12);overflow:hidden;position:relative}
     .a4:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(120,90,55,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(120,90,55,.03) 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.5),transparent 28%);pointer-events:none}
     .topbar{padding:28px 32px 18px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);position:relative;z-index:1}
     h1{margin:0;font-size:30px;letter-spacing:-.04em}.en{margin-top:3px;color:var(--muted);font-size:13px}.headline{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;max-width:390px}.pill{border:1px solid var(--line);background:rgba(255,255,255,.55);color:#4f483f;border-radius:999px;padding:6px 10px;font-size:11px;white-space:nowrap}
     .layout{display:grid;grid-template-columns:236px 1fr;gap:20px;padding:20px 28px 28px;position:relative;z-index:1} aside{padding-right:12px;border-right:1px solid rgba(231,220,203,.75)} main{display:flex;flex-direction:column;gap:14px}
     .side-section{padding:0 0 18px;margin-bottom:18px;border-bottom:1px solid rgba(231,220,203,.72)}.side-section:last-child{border-bottom:0;margin-bottom:0}.side-title{margin:0 0 9px;font-size:11px;font-weight:680;letter-spacing:.08em;color:#9a8f82}.summary{margin:0;color:#554d44;font-size:12px}.mini-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.metric-box{border:1px solid rgba(231,220,203,.75);background:rgba(255,255,255,.32);border-radius:12px;padding:8px}.metric-box b{display:block;font-size:13px;color:var(--green)}.metric-box span{display:block;font-size:10.5px;color:var(--muted);margin-top:2px}
-    .portfolio-card{display:block;text-decoration:none;color:inherit;border:1px solid rgba(242,138,60,.35);background:linear-gradient(135deg,var(--accent-soft),rgba(255,255,255,.48));border-radius:16px;padding:13px 14px;margin:2px 0 20px;box-shadow:0 10px 28px rgba(242,138,60,.08)}.portfolio-kicker{font-size:10.5px;letter-spacing:.08em;color:#a95b22;font-weight:750}.portfolio-title{margin-top:4px;font-size:15px;font-weight:760;letter-spacing:-.02em}.portfolio-desc{margin-top:5px;font-size:11.5px;color:#6b5e50}.portfolio-link{margin-top:9px;font-size:11.5px;color:#9b4d16;font-weight:700}
+    .portfolio-card{display:block;text-decoration:none;color:inherit;border:1px solid rgba(231,220,203,.75);background:rgba(255,255,255,.22);border-radius:12px;padding:10px 11px;margin:0;color:#6b6258}.portfolio-kicker{font-size:10px;letter-spacing:.08em;color:#a19689;font-weight:680}.portfolio-title{margin-top:3px;font-size:12px;font-weight:680;letter-spacing:-.01em;color:#5b5147}.portfolio-desc{margin-top:4px;font-size:10.5px;color:#8a8176;line-height:1.45}.portfolio-link{margin-top:6px;font-size:10.5px;color:#8a6a4b;font-weight:650}
     .contact-item{display:grid;grid-template-columns:18px 1fr;gap:6px;align-items:start;font-size:11.5px;color:#5d554c;margin:7px 0;overflow-wrap:anywhere}.tag-cloud{display:flex;flex-wrap:wrap;gap:6px}.skill-tag{padding:5px 8px;border-radius:9px;background:rgba(255,255,255,.5);border:1px solid rgba(231,220,203,.9);color:#493f35;font-size:11px;line-height:1}.skill-tag.hot{border-color:rgba(242,138,60,.3);background:#fff3e7;color:#9b4d16;font-weight:620}.edu-item{padding:9px 0;border-top:1px dashed var(--line)}.edu-item:first-of-type{border-top:0;padding-top:0}.edu-school{font-size:12px;font-weight:680}.edu-meta{font-size:11px;color:var(--muted);margin-top:2px}
-    .job{padding:15px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.68);break-inside:avoid}.job.featured{background:linear-gradient(180deg,rgba(255,243,231,.82),rgba(255,255,255,.72))}.job-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;margin-bottom:9px}.job h2{margin:0;font-size:15px;letter-spacing:-.01em}.role{margin-top:3px;font-size:12px;color:var(--muted)}.time{font-size:11px;padding:5px 8px;border-radius:999px;background:#f3eadc;color:#5d5145;white-space:nowrap}.project{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}.project:first-of-type{margin-top:0;padding-top:0;border-top:0}.project-title{font-size:12.5px;font-weight:720;color:#342e28;margin-bottom:5px}.project p{margin:0 0 6px;font-size:11.5px;color:#5a5148}ul.bullets{margin:0;padding-left:16px;color:#564d44;font-size:11.5px}ul.bullets li{margin:4px 0}.metric{color:var(--green);font-weight:720}
+    .job{padding:15px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.68);break-inside:avoid}.job.featured{background:linear-gradient(180deg,rgba(255,243,231,.82),rgba(255,255,255,.72))}.job-head{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;margin-bottom:9px}.job h2{margin:0;font-size:15px;letter-spacing:-.01em}.role{margin-top:3px;font-size:12px;color:var(--muted)}.time{font-size:11px;padding:5px 8px;border-radius:999px;background:#f3eadc;color:#5d5145;white-space:nowrap}.project{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}.project:first-of-type{margin-top:0;padding-top:0;border-top:0}.project-title-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:5px}.project-title{font-size:12.5px;font-weight:720;color:#342e28}.project-time{font-size:10.5px;color:#8b7d6e;background:#f7efe3;border:1px solid rgba(231,220,203,.85);border-radius:999px;padding:3px 7px;white-space:nowrap}.project p{margin:0 0 6px;font-size:11.5px;color:#5a5148}.label{font-weight:720;color:#3a332c}ul.bullets{margin:0;padding-left:16px;color:#564d44;font-size:11.5px}ul.bullets li{margin:4px 0}.metric{color:var(--green);font-weight:720}
     @media print{body{background:#fff;padding:0}.a4{width:210mm;min-height:297mm;border-radius:0;box-shadow:none;border:0}}
-    @media(max-width:860px){body{padding:12px}.a4{width:100%;border-radius:22px}.topbar{align-items:flex-start;flex-direction:column}.headline{justify-content:flex-start}.layout{grid-template-columns:1fr;padding:18px}aside{border-right:0;padding-right:0}}
+    @media(max-width:860px){body{padding:12px}.a4{width:100%;border-radius:22px}.topbar{align-items:flex-start;flex-direction:column}.headline{justify-content:flex-start}.layout{grid-template-columns:1fr;padding:18px}aside{border-right:0;padding-right:0}.project-title-row{align-items:flex-start;flex-direction:column;gap:4px}}
   </style>
 </head>
 <body>
@@ -35,52 +36,37 @@
         <section class="side-section"><h3 class="side-title">联系卡片</h3><div class="contact-item"><span>☎</span><span>13918854251<br>微信同号</span></div><div class="contact-item"><span>✉</span><span>zhenyaoxu.cn@gmail.com</span></div><div class="contact-item"><span>⌂</span><span>上海</span></div><div class="contact-item"><span>→</span><span>求职意向：产品经理<br>内容行业 / AIGC方向</span></div></section>
         <section class="side-section"><h3 class="side-title">专业技能</h3><div class="tag-cloud"><span class="skill-tag hot">Agent 架构</span><span class="skill-tag hot">SFT 微调</span><span class="skill-tag hot">意图理解</span><span class="skill-tag hot">评测体系</span><span class="skill-tag">动态工具调度</span><span class="skill-tag">创作灵感挖掘</span><span class="skill-tag">内容策略</span><span class="skill-tag">归因模型</span><span class="skill-tag">指标体系</span><span class="skill-tag">数据产品</span><span class="skill-tag">标签平台</span><span class="skill-tag">用户画像</span></div></section>
         <section class="side-section"><h3 class="side-title">教育经历</h3><div class="edu-item"><div class="edu-school">香港城市大学｜市场营销硕士</div><div class="edu-meta">2018.09 - 2020.10｜GPA 3.8/4.0｜Top 1%</div><div class="edu-meta">法国里昂商学院公费交换｜优秀毕业生</div></div><div class="edu-item"><div class="edu-school">东华大学｜管理学学士</div><div class="edu-meta">2014.09 - 2018.06｜GPA 3.76/5.0｜Top 10%</div><div class="edu-meta">台湾逢甲大学公费交换｜4次校级奖学金</div></div></section>
-
-        <a class="portfolio-card" href="https://zhenyaoxucn.github.io/portfolio" target="_blank" rel="noopener noreferrer">
+        <a class="portfolio-card" href="https://zhenyaoxucn.github.io/portfolio/#profile" target="_blank" rel="noopener noreferrer">
           <div class="portfolio-kicker">VIBECODING PORTFOLIO</div>
           <div class="portfolio-title">ZHENYAOの电子影像空间</div>
           <div class="portfolio-desc">个人作品集｜VibeCoding 搭建的网页作品与个人表达空间</div>
           <div class="portfolio-link">点击访问 →</div>
         </a>
+
       </aside>
       <main>
-        <section class="job featured"><div class="job-head"><div><h2>字节跳动</h2><div class="role">内容策略产品｜创作灵感挖掘与应用</div></div><div class="time">2024.06 - 至今</div></div><div class="project"><div class="project">
-  <div class="project-title">创作灵感 Agent & AI 服务</div>
-
-  <p><b>背景与目标：</b>
-  阶段一验证灵感推荐对创作行为的正向影响，但“平台中心化分发”存在个性化不足与被动接收问题。
-  主导升级为 AI 对话式创作助手，让创作者主动获取个性化选题与创作建议。
-  </p>
-
-  <p><b>意图理解与质量评测：</b></p>
-  <ul class="bullets">
-    <li>定义二级意图分类，构建正负样本库并完成 SFT 微调，意图识别准确率提升 <span class="metric">20.1pp+</span></li>
-    <li>联合垂类专家制定 7 大意图多维评分标准，将主观评审转化为可量化评估体系</li>
-  </ul>
-
-  <p><b>灵感 Agent 建设：</b></p>
-  <ul class="bullets">
-    <li>针对固定 Prompt + Workflow 多轮对话僵化问题，设计动态工具调度 Agent 架构，问答合格率提升 <span class="metric">15.6pp</span></li>
-    <li>
-      <b>平台内容趋势挖掘：</b>
-      引入视频时间切片数据，通过大模型多维解构内容 + 飙升度检测，
-      将灵感推荐从「热点搬运」升级为「趋势预判」
-    </li>
-    <li>
-      <b>相似创作者检索：</b>
-      基于多维画像实现语义级匹配，下发「对标账号 + 创作建议」复合参考，
-      将单次灵感延伸为长期人设对标
-    </li>
-  </ul>
-
-  <p><b>AI 知识与策略运营平台：</b></p>
-  <ul class="bullets">
-    <li>搭建零代码知识管理平台，将爆款方法论沉淀为可调用策略</li>
-    <li>形成「经验沉淀 → 策略调优 → 智能分发」的持续迭代闭环</li>
-  </ul>
-</div><ul class="bullets"><li>从 0 构建清洗、挖掘、审核生产线及标签体系，覆盖选题与视频两大形态。</li><li>B 端配置 + C 端触达产品化，日均牵引 <span class="metric">1800+</span> 优质投稿。</li><li>设计「消费路径 + 稿件要素拆解」双维归因模型，结合相似度算法交叉比对，归因准确率从 <span class="metric">57%</span> 提升至 <span class="metric">84%</span>。</li></ul></div></section>
-        <section class="job"><div class="job-head"><div><h2>蚂蚁国际</h2><div class="role">数据应用产品｜支付指标体系与指标平台搭建</div></div><div class="time">2022.09 - 2024.06</div></div><div class="project"><p>拆解业务流程，将分散的烟囱式表资产抽象成分析专题、维度与指标，支持业务灵活看数与用数。</p><ul class="bullets"><li>落地线上支付成功率运营指标体系，覆盖通用 PSR 分析、重点渠道洞察、专项产品能力洞察、大商户定制分析。</li><li>从 0 到 1 落地线下支付数据分析产品，包含观测、通路拆解、归因分析与异动监测。</li><li>指标全集完成 <span class="metric">97.4%</span>，数据分析专题月均访问 PV 达 <span class="metric">500+</span>。</li></ul></div></section>
-        <section class="job"><div class="job-head"><div><h2>滴滴出行</h2><div class="role">标签平台产品｜用户画像与标签平台建设</div></div><div class="time">2020.06 - 2022.09</div></div><div class="project"><ul class="bullets"><li>从 0 到 1 落地离线 / 实时数据源自助接入能力，标签上线效率提升 <span class="metric">200%</span>，累计接入 <span class="metric">358</span> 个标签、节省 <span class="metric">187</span> 人日。</li><li>搭建标签资产大盘，实现使用数据与质量数据可视化监控及存量治理，产品覆盖 <span class="metric">90%</span> 数据团队，治理下线 <span class="metric">63</span> 个低效标签。</li><li>落地 SQL 分群、跨域计算分群、ID-Mapping 转换分群，转化 <span class="metric">76%</span> 高频上传用户，分群月均使用量提升 <span class="metric">109%</span>。</li><li>国际化业务中，巴西司机侧生命周期标签贡献 <span class="metric">3.4% / 2.1%</span> 在线时长增量；墨西哥乘客侧沉默用户标签使冒泡发单转化率提升 <span class="metric">5.8%</span>。</li></ul></div></section>
+        <section class="job featured">
+          <div class="job-head"><div><h2>字节跳动</h2><div class="role">内容策略产品｜创作灵感挖掘与应用</div></div><div class="time">2024.06 - 至今</div></div>
+          <div class="project">
+            <div class="project-title-row"><div class="project-title">① 创作灵感Agent & AI服务</div><div class="project-time">2025.04 - 至今</div></div>
+            <p><span class="label">背景与目标：</span>阶段一的建设验证了灵感推荐对创作行为的正向影响，但“平台中心化分发”模式存在个性化不足、创作者被动接收的瓶颈。主导将产品形态升级为 AI 对话式创作助手，让创作者主动获取个性化选题与创作建议。</p>
+            <ul class="bullets">
+              <li><span class="label">意图理解与质量评测：</span>定义二级意图分类，构建正负样本库完成模型微调（SFT），意图识别准确率提升 <span class="metric">20.1 pp+</span>；联合垂类专家制定 7 大意图的多维评分标准，将主观内容评审转化为可量化的客观评估体系。</li>
+              <li><span class="label">灵感 Agent 建设：</span>基于早期固定 Prompt+Workflow 的方案在多轮对话中表现僵化的问题，设计动态工具调度的 Agent 架构，问答合格率提升 <span class="metric">15.6pp</span>。核心产品能力包括：① 平台内容趋势挖掘：引入视频时间切片数据，通过大模型多维度解构视频内容，结合飙升度检测挖掘创作趋势，让灵感推荐从「热点搬运升级为趋势预判」；② 相似创作者检索：基于多维画像实现语义级相似匹配，下发「对标账号 + 创作建议」复合型参考，将单次灵感延伸为长期人设对标。</li>
+              <li><span class="label">AI 知识与策略运营平台：</span>搭建零代码知识管理平台，支持运营将爆款方法论直接沉淀为可调用的系统策略，形成“经验沉淀 → 策略调优 → 智能分发”的持续迭代路径。</li>
+            </ul>
+          </div>
+          <div class="project">
+            <div class="project-title-row"><div class="project-title">② 创作灵感生产&分发全链路（从0到1）</div><div class="project-time">2024.06 - 2025.03</div></div>
+            <p><span class="label">背景与目标：</span>以“促进优质投稿”为目标，主导搭建“灵感挖掘 → 策略分发 → 效果归因”的完整业务闭环。</p>
+            <ul class="bullets">
+              <li><span class="label">灵感生产与分发产品化：</span>从 0 构建「清洗 → 挖掘 → 审核」生产线及标签体系，将灵感流转产品化（B 端配置 + C 端触达），覆盖选题与视频两大形态，日均牵引 <span class="metric">1800+</span> 优质投稿。</li>
+              <li><span class="label">分发效果归因体系：</span>设计“消费路径 + 稿件要素拆解”双维归因模型，结合相似度算法交叉比对，归因准确率从 <span class="metric">57%</span> 提升至 <span class="metric">84%</span>（+27pp）。</li>
+            </ul>
+          </div>
+        </section>
+        <section class="job"><div class="job-head"><div><h2>蚂蚁国际</h2><div class="role">数据应用产品｜支付指标体系与指标平台搭建</div></div><div class="time">2022.09 - 2024.06</div></div><div class="project"><p><span class="label">背景与目标：</span>拆解业务流程，通过将分散的烟囱式表资产抽象成分析专题、维度与指标，支持业务灵活看数与用数，理解业务并推动业务发展。</p><ul class="bullets"><li><span class="label">线上支付成功率运营指标体系：</span>落地 4 个分析专题 —— 通用 PSR 分析、重点渠道洞察、专项产品能力洞察、大商户定制分析，提升数据资产复用率。</li><li><span class="label">线下支付数据分析产品：</span>从 0 到 1 落地 4 个数据分析专题（观测 → 通路拆解 → 归因分析 + 异动监测），指标全集完成 <span class="metric">97.4%</span>，数据分析专题月均访问 PV 达 <span class="metric">500+</span>。</li></ul></div></section>
+        <section class="job"><div class="job-head"><div><h2>滴滴出行</h2><div class="role">标签平台产品｜用户画像与标签平台建设</div></div><div class="time">2020.06 - 2022.09</div></div><div class="project"><p><span class="label">背景与目标：</span>建设标签平台管理能力、以业务目标为核心的标签体系，引入用户画像提升业务团队的运营效率。</p><ul class="bullets"><li><span class="label">标签平台建设（面向数据生产者）：</span>从 0 到 1 落地离线 / 实时数据源自助接入功能，标签上线效率提升 <span class="metric">200%</span>（3 天 → 1 天），累计接入 <span class="metric">358</span> 个标签、节省 <span class="metric">187</span> 人日；同步搭建标签资产大盘，实现使用数据与质量数据的可视化监控及存量治理，产品覆盖 <span class="metric">90%</span> 数据团队，累计治理下线 <span class="metric">63</span> 个低效标签。</li><li><span class="label">用户分群能力拓展（面向数据消费者）：</span>围绕一站式用户分层，先后落地 SQL 分群、跨域计算分群、ID-Mapping 转换分群三项能力，将原本跨多系统的提取 - 转换 - 上传流程收敛至平台内闭环，转化 <span class="metric">76%</span> 高频上传用户，分群月均使用量提升 <span class="metric">109%</span>。</li><li><span class="label">国际化业务落地：</span>巴西司机侧基于生命周期标签驱动拉新与衰退预警策略，贡献 <span class="metric">3.4% / 2.1%</span> 在线时长增量；墨西哥乘客侧基于离线触达场景搭建沉默用户标签体系，冒泡发单转化率提升 <span class="metric">5.8%</span>。</li></ul></div></section>
       </main>
     </div>
   </div>
