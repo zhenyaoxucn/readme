@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>许祯瑶 Zhenyao XU｜产品经理简历</title>
+  <meta name="description" content="许祯瑶 Zhenyao XU｜AI/策略/平台产品经理简历，内容行业/AIGC方向。" />
+  <style>
+    :root {
+      --bg: #fbfaf8;
+      --paper: #ffffff;
+      --ink: #2f2f2f;
+      --muted: #6f6a64;
+      --subtle: #9b948c;
+      --line: #e9e4dd;
+      --line-dark: #d8d1c8;
+      --tag: #f3eee7;
+      --tag-ink: #5e554b;
+      --accent: #b96f32;
+      --accent-soft: #fff3e8;
+      --blue-soft: #edf4ff;
+      --green-soft: #eef7f1;
+      --shadow: 0 24px 80px rgba(40, 34, 27, 0.08);
+      --radius: 18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(185, 111, 50, .10), transparent 32rem),
+        linear-gradient(180deg, #fbfaf8 0%, #f7f3ee 100%);
+      color: var(--ink);
+      font-family: var(--sans);
+      line-height: 1.72;
+      letter-spacing: .01em;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+
+    .page {
+      width: min(1120px, calc(100% - 40px));
+      margin: 34px auto 56px;
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(233,228,221,.9);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .topbar {
+      height: 46px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 22px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(251,250,248,.84);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .dot { width: 11px; height: 11px; border-radius: 999px; background: #dfd8cf; }
+    .dot:nth-child(1) { background: #e8aaa0; }
+    .dot:nth-child(2) { background: #e7cc83; }
+    .dot:nth-child(3) { background: #9ec79b; }
+    .path { margin-left: 10px; color: var(--subtle); font-size: 13px; }
+
+    .hero {
+      padding: 48px 54px 28px;
+      border-bottom: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(255,243,232,.88), rgba(255,255,255,.52) 42%, rgba(237,244,255,.62)),
+        var(--paper);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.04;
+      letter-spacing: -.045em;
+      font-weight: 760;
+    }
+    .subtitle {
+      margin: 16px 0 0;
+      max-width: 820px;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.78);
+      border: 1px solid var(--line);
+      color: var(--tag-ink);
+      font-size: 13px;
+      white-space: nowrap;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 296px 1fr;
+      gap: 0;
+    }
+    aside {
+      padding: 34px 28px 44px 34px;
+      border-right: 1px solid var(--line);
+      background: #fcfbf9;
+    }
+    main { padding: 34px 48px 52px; }
+
+    .toc {
+      position: sticky;
+      top: 68px;
+    }
+    .side-block { margin-bottom: 28px; }
+    .side-title {
+      margin: 0 0 12px;
+      color: var(--subtle);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-family: var(--mono);
+    }
+    .nav-link {
+      display: block;
+      padding: 7px 0;
+      color: var(--muted);
+      font-size: 14px;
+      border-bottom: 1px solid transparent;
+    }
+    .nav-link:hover { border-bottom-color: var(--line-dark); }
+
+    .tag-cloud { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag {
+      padding: 6px 9px;
+      border-radius: 8px;
+      background: var(--tag);
+      color: var(--tag-ink);
+      font-size: 12px;
+      line-height: 1.2;
+      border: 1px solid rgba(216,209,200,.65);
+    }
+
+    section { margin-bottom: 36px; }
+    .section-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .emoji {
+      width: 32px;
+      height: 32px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: var(--accent-soft);
+      border: 1px solid #f1dbc9;
+    }
+    h2 {
+      margin: 0;
+      font-size: 23px;
+      line-height: 1.2;
+      letter-spacing: -.02em;
+    }
+
+    .callout {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fffdfb;
+      margin-bottom: 14px;
+    }
+    .callout strong { color: #3a332c; }
+
+    .job {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    .job-head {
+      padding: 18px 20px;
+      background: linear-gradient(180deg, #fff, #fcfaf7);
+      border-bottom: 1px solid var(--line);
+    }
+    .job-title {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    h3 { margin: 0; font-size: 18px; letter-spacing: -.015em; }
+    .time { color: var(--subtle); font-size: 13px; white-space: nowrap; }
+    .role { color: var(--muted); font-size: 14px; }
+    .job-body { padding: 18px 20px 20px; }
+
+    .project {
+      padding: 14px 0 16px;
+      border-bottom: 1px solid var(--line);
+    }
+    .project:last-child { border-bottom: 0; padding-bottom: 0; }
+    .project h4 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      color: #39342f;
+    }
+    .meta {
+      font-size: 12px;
+      color: var(--accent);
+      font-family: var(--mono);
+      margin-left: 6px;
+      font-weight: 500;
+    }
+
+    ul { margin: 8px 0 0; padding-left: 1.15em; }
+    li { margin: 6px 0; }
+    li::marker { color: var(--accent); }
+    .highlight {
+      background: linear-gradient(180deg, transparent 58%, rgba(255, 214, 176, .55) 0);
+      font-weight: 650;
+    }
+
+    .education-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .edu-card {
+      padding: 18px 18px 16px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .edu-card h3 { font-size: 16px; margin-bottom: 6px; }
+    .small { color: var(--muted); font-size: 13px; }
+
+    .footer {
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      color: var(--subtle);
+      font-size: 12px;
+      font-family: var(--mono);
+    }
+
+    @media (max-width: 860px) {
+      .page { width: min(100% - 20px, 720px); margin: 12px auto 32px; border-radius: 20px; }
+      .hero { padding: 34px 24px 24px; }
+      .layout { grid-template-columns: 1fr; }
+      aside { border-right: 0; border-bottom: 1px solid var(--line); padding: 24px; }
+      .toc { position: static; }
+      main { padding: 28px 24px 38px; }
+      .education-grid { grid-template-columns: 1fr; }
+      .job-title { display: block; }
+      .time { display: block; margin-top: 4px; }
+    }
+
+    @media print {
+      body { background: white; }
+      .page { box-shadow: none; width: 100%; margin: 0; border: 0; border-radius: 0; }
+      .topbar, .toc .side-block:first-child { display: none; }
+      .layout { grid-template-columns: 250px 1fr; }
+      aside { border-right: 1px solid #ddd; }
+      a { color: inherit; }
+      section, .job { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar" aria-hidden="true">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="path">Resume / Zhenyao XU / Product Manager</span>
+    </div>
+
+    <header class="hero">
+      <div class="eyebrow">AI · CONTENT STRATEGY · PLATFORM PRODUCT</div>
+      <h1>许祯瑶<br><span style="color:var(--muted)">Zhenyao XU</span></h1>
+      <p class="subtitle">AI/策略/平台产品经理，具备 <strong>内容产品 2 年 + 数据产品 3 年</strong> 的复合背景。擅长把业务目标拆解为模型能力、产品链路与量化评测体系，当前关注内容行业与 AIGC 创作场景。</p>
+      <div class="contact-row">
+        <a class="pill" href="tel:13918854251">☎ 13918854251（微信同号）</a>
+        <a class="pill" href="mailto:zhenyaoxu.cn@gmail.com">✉ zhenyaoxu.cn@gmail.com</a>
+        <span class="pill">📍 上海</span>
+        <span class="pill">🎯 求职意向：产品经理（内容行业 / AIGC）</span>
+      </div>
+    </header>
+
+    <div class="layout">
+      <aside>
+        <div class="toc">
+          <div class="side-block">
+            <p class="side-title">Navigation</p>
+            <a class="nav-link" href="#summary">个人总结</a>
+            <a class="nav-link" href="#experience">工作经历</a>
+            <a class="nav-link" href="#education">教育经历</a>
+          </div>
+
+          <div class="side-block">
+            <p class="side-title">Core Keywords</p>
+            <div class="tag-cloud">
+              <span class="tag">创作灵感 Agent</span>
+              <span class="tag">意图理解 / SFT</span>
+              <span class="tag">动态工具调度</span>
+              <span class="tag">评测体系</span>
+              <span class="tag">内容策略</span>
+              <span class="tag">指标体系</span>
+              <span class="tag">效果归因</span>
+              <span class="tag">标签平台</span>
+              <span class="tag">用户画像</span>
+              <span class="tag">AIGC</span>
+            </div>
+          </div>
+
+          <div class="side-block">
+            <p class="side-title">Product DNA</p>
+            <div class="callout" style="padding:14px 15px; font-size:13px; margin:0; background:var(--green-soft)">
+              不设限 ∞，重度内容爱好者；喜欢用 VibeCoding 搭建自己的网页与电子影像空间。
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <section id="summary">
+          <div class="section-head"><span class="emoji">🧭</span><h2>个人总结</h2></div>
+          <div class="callout">
+            <strong>AI 相关经验：</strong>主导创作灵感 Agent 0→1，覆盖意图理解（SFT 微调）、Agent 架构（动态工具调度）、评测体系（量化评分）。
+          </div>
+          <div class="callout">
+            <strong>复合背景：</strong>数据产品 3 年 & 内容产品 2 年，既懂指标与归因，也懂创作者场景，能把 <span class="highlight">业务目标 → 模型能力 → 评测体系</span> 串起来。
+          </div>
+        </section>
+
+        <section id="experience">
+          <div class="section-head"><span class="emoji">💼</span><h2>工作经历</h2></div>
+
+          <article class="job">
+            <div class="job-head">
+              <div class="job-title"><h3>字节跳动</h3><span class="time">2024/06 – 至今</span></div>
+              <div class="role">内容策略产品｜创作灵感挖掘与应用</div>
+            </div>
+            <div class="job-body">
+              <div class="project">
+                <h4>① 创作灵感 Agent & AI 服务 <span class="meta">2025/04 – 至今</span></h4>
+                <ul>
+                  <li><strong>背景与目标：</strong>将灵感推荐从“平台中心化分发”升级为 AI 对话式创作助手，支持创作者主动获取个性化选题与创作建议。</li>
+                  <li><strong>意图理解与质量评测：</strong>定义二级意图分类，构建正负样本库完成 SFT 微调，意图识别准确率提升 <span class="highlight">20.1 pp+</span>；联合垂类专家制定 7 大意图多维评分标准，把主观内容评审转化为量化评估。</li>
+                  <li><strong>灵感 Agent 建设：</strong>针对固定 Prompt + Workflow 在多轮对话中僵化的问题，设计动态工具调度 Agent 架构，问答合格率提升 <span class="highlight">15.6 pp</span>。</li>
+                  <li><strong>核心能力：</strong>引入视频时间切片数据，通过大模型多维解构内容，并结合飙升度检测挖掘创作趋势；基于多维画像实现语义级相似创作者匹配，下发“对标账号 + 创作建议”复合型参考。</li>
+                  <li><strong>AI 知识与策略运营平台：</strong>搭建零代码知识管理平台，支持运营将爆款方法论沉淀为可调用系统策略，形成“经验沉淀 → 策略调优 → 智能分发”的持续迭代路径。</li>
+                </ul>
+              </div>
+              <div class="project">
+                <h4>② 创作灵感生产 & 分发全链路（0→1） <span class="meta">2024/06 – 2025/03</span></h4>
+                <ul>
+                  <li><strong>背景与目标：</strong>以促进优质投稿为目标，主导搭建“灵感挖掘 → 策略分发 → 效果归因”的完整业务闭环。</li>
+                  <li><strong>生产与分发产品化：</strong>从 0 构建清洗、挖掘、审核生产线及标签体系，将灵感流转产品化，覆盖选题与视频两大形态，日均牵引 <span class="highlight">1800+ 优质投稿</span>。</li>
+                  <li><strong>分发效果归因：</strong>设计“消费路径 + 稿件要素拆解”双维归因模型，结合相似度算法交叉比对，归因准确率从 <span class="highlight">57% 提升至 84%</span>。</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div class="job-title"><h3>蚂蚁国际</h3><span class="time">2022/09 – 2024/06</span></div>
+              <div class="role">数据应用产品｜支付指标体系与指标平台搭建</div>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li><strong>背景与目标：</strong>拆解业务流程，将分散烟囱式表资产抽象成分析专题、维度与指标，支持业务灵活看数与用数。</li>
+                <li><strong>线上支付成功率运营指标体系：</strong>落地通用 PSR 分析、重点渠道洞察、专项产品能力洞察、大商户定制分析 4 个分析专题，提升数据资产复用率。</li>
+                <li><strong>线下支付数据分析产品：</strong>从 0 到 1 落地观测、通路拆解、归因分析、异动监测 4 个数据分析专题；指标全集完成 <span class="highlight">97.4%</span>，数据分析专题月均访问 PV 达 <span class="highlight">500+</span>。</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="job">
+            <div class="job-head">
+              <div class="job-title"><h3>滴滴出行</h3><span class="time">2020/06 – 2022/09</span></div>
+              <div class="role">标签平台产品｜用户画像与标签平台建设</div>
+            </div>
+            <div class="job-body">
+              <ul>
+                <li><strong>标签平台建设：</strong>从 0 到 1 落地离线 / 实时数据源自助接入功能，标签上线效率提升 <span class="highlight">200%</span>（3 天 → 1 天），累计接入 358 个标签、节省 187 人日。</li>
+                <li><strong>资产治理：</strong>搭建标签资产大盘，实现使用数据与质量数据可视化监控及存量治理；产品覆盖 90% 数据团队，累计治理下线 63 个低效标签。</li>
+                <li><strong>用户分群能力：</strong>落地 SQL 分群、跨域计算分群、ID-Mapping 转换分群，将跨系统流程收敛至平台闭环，转化 76% 高频上传用户，分群月均使用量提升 <span class="highlight">109%</span>。</li>
+                <li><strong>国际化业务：</strong>巴西司机侧基于生命周期标签驱动拉新与衰退预警策略，贡献 3.4% / 2.1% 在线时长增量；墨西哥乘客侧沉默用户标签体系使冒泡发单转化率提升 <span class="highlight">5.8%</span>。</li>
+              </ul>
+            </div>
+          </article>
+        </section>
+
+        <section id="education">
+          <div class="section-head"><span class="emoji">🎓</span><h2>教育经历</h2></div>
+          <div class="education-grid">
+            <div class="edu-card">
+              <h3>香港城市大学｜市场营销学 Marketing｜硕士</h3>
+              <div class="small">2018.09 – 2020.10｜Language：EN</div>
+              <ul>
+                <li>GPA：3.8 / 4.0｜专业 Top 1%</li>
+                <li>赴法国里昂商学院公费交换一学期</li>
+                <li>获优秀毕业生荣誉称号（比例 &lt; 5%）</li>
+              </ul>
+            </div>
+            <div class="edu-card">
+              <h3>东华大学｜管理学｜学士</h3>
+              <div class="small">2014.09 – 2018.06｜Language：CN / EN</div>
+              <ul>
+                <li>GPA：3.76 / 5.0｜专业 Top 10%</li>
+                <li>赴台湾逢甲大学公费交换一学期</li>
+                <li>4 次获得校级奖学金</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <div class="footer">Last updated · Resume website styled like a Notion page · Designed for GitHub Pages deployment</div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
